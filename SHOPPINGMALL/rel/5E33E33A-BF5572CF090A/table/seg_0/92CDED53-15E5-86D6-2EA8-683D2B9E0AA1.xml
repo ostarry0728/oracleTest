@@ -8,9 +8,9 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="NO" id="DC0B9D55-75D7-FB48-3E46-715276D10D95">
+<Column name="NO" id="202C235E-1EDB-7098-C8F9-4F37BBE09E39">
 <createdBy>user1</createdBy>
-<createdTime>2024-11-08 05:42:04 UTC</createdTime>
+<createdTime>2024-11-08 05:48:28 UTC</createdTime>
 <ownerDesignName>SHOPPINGMALL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -27,7 +27,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>11 CHAR</dataTypeSize>
-<ownDataTypeParameters>11 CHAR,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="F26194D9-8B86-9D69-FC4B-BBA21904D67C" referredColumn="128D7F8D-4A7C-4752-B252-501F1EE6F363"/>
@@ -76,7 +76,7 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="DC0B9D55-75D7-FB48-3E46-715276D10D95"/>
+<colUsage columnID="202C235E-1EDB-7098-C8F9-4F37BBE09E39"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="E7ED8C41-980E-8051-34CF-0DB0B0D60E91" name="BUY_USER_MOBILE_FK">

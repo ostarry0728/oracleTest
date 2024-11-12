@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0D52FA33-68DB-EBC1-108C-F5A3367B67D3" schemaObject="A225C9C2-D467-B45F-444F-85C3DC1D99C5" name="HOSPITAL">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>HOSPITAL</sourceObjSchema>
+<sourceObjName>HOSPITAL</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>0FF17A9D-335C-757B-8F1C-51F1B8165F76</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CLASSID" id="C432F312-BF3B-7945-6629-B6988600B95E">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>HOSPITAL</sourceObjSchema>
+<sourceObjName>CLASSID</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>B59BC662-B49F-F3EA-5760-687E10F272C1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="C_NAME" id="1B1EB2DA-D820-8A98-326C-E348BAD2002D">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>HOSPITAL</sourceObjSchema>
+<sourceObjName>C_NAME</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>5B8852FB-1042-5CEC-2AB0-8522EC8FDCCB</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="C_PHONE" id="6CFAAE97-679B-3BBB-F798-36E900424056">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>HOSPITAL</sourceObjSchema>
+<sourceObjName>C_PHONE</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>2D362C7C-82DB-F7C2-DA85-2835E4A04A51</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>11 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="C_ADDRESS" id="F1F35AE1-3EFC-D4BF-B3BD-F83783DE44D1">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>HOSPITAL</sourceObjSchema>
+<sourceObjName>C_ADDRESS</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>452D812B-230E-5A00-A9D5-AC64C0B9D2B7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="17AF3E36-868C-AD75-EAB9-A6D3A258B03C" name="HOSPITAL_PK">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>HOSPITAL</sourceObjSchema>
+<sourceObjName>HOSPITAL_PK</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>24C3F786-3F05-12E8-DDB4-CAE3AFF74C15</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C432F312-BF3B-7945-6629-B6988600B95E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B8943CAD-49E3-1934-2008-7543E3EE4E6C" schemaObject="A225C9C2-D467-B45F-444F-85C3DC1D99C5" name="HOSPITAL_PK">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>HOSPITAL</sourceObjSchema>
+<sourceObjName>HOSPITAL_PK</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>6FB273DC-34AF-D2A6-0C3C-254BEA9FB301</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C432F312-BF3B-7945-6629-B6988600B95E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

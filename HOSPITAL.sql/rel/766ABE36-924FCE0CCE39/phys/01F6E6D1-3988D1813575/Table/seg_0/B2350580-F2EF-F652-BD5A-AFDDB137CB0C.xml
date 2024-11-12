@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="HOSPITAL" directorySegmentName="seg_0" id="B2350580-F2EF-F652-BD5A-AFDDB137CB0C">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="C_ADDRESS" id="527A3129-9A75-DF5B-279B-565ED5BF9745">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="C_PHONE" id="541DB1DF-B8D8-82D6-F97D-85C08DF6AE63">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="C_NAME" id="6F4FED6C-FEE0-6A21-D797-8389099FBB47">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CLASSID" id="778342D6-65B0-02B8-801E-2A6D5679D15B">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="HOSPITAL_PK" id="19568AEA-B1CD-12A2-54A5-C09FC3BD1081">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

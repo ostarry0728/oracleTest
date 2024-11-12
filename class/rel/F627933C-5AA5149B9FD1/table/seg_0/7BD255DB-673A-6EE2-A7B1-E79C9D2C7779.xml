@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7BD255DB-673A-6EE2-A7B1-E79C9D2C7779" name="SUBJECT">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 02:15:52 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NO" id="8F60B801-CB7A-5A6A-4C16-D981B69C1811">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 02:16:30 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUM" id="3481A87B-E48B-5FBA-1670-DB6DD7A8E376">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 02:17:54 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="B251C3BB-5C0C-247A-3108-F87109AF5989">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 02:19:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FC0E23E9-6162-2979-BAF6-0D755230B4AB" name="SUBJECT_PK">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 02:18:16 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3481A87B-E48B-5FBA-1670-DB6DD7A8E376"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

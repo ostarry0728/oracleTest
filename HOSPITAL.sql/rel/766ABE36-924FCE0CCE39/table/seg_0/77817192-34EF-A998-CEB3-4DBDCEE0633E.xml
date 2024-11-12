@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="77817192-34EF-A998-CEB3-4DBDCEE0633E" schemaObject="A225C9C2-D467-B45F-444F-85C3DC1D99C5" name="PRESCRIPTION">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>HOSPITAL</sourceObjSchema>
+<sourceObjName>PRESCRIPTION</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>63C496B4-DA68-AE5E-1971-51C41108194E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PREID" id="A4B7AD93-8DB6-BC1D-8A70-7AB03C04112E">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>PRESCRIPTION</sourceObjSchema>
+<sourceObjName>PREID</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>138AE670-54B9-55C6-52E3-B2BC7E2866EE</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESERVID" id="B640FC49-8BB7-3F6F-6B7A-DC0E6D7AE31E">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>PRESCRIPTION</sourceObjSchema>
+<sourceObjName>RESERVID</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>838A17B1-1EC5-B34B-FC3E-AA3EF8AFDBB7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AAA3DA7C-46BF-695F-E1EE-41DDFFC1E3A7" referredColumn="4B9451B4-D8F7-7F48-A49E-5EABB270E1EA"/>
+</associations>
+</Column>
+<Column name="PATIID" id="37861817-2602-C271-6343-8D480ED5C807">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>PRESCRIPTION</sourceObjSchema>
+<sourceObjName>PATIID</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>012382C1-E33E-D2CE-75D9-74E4EE0FC5D5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="26F2F075-7162-CC0D-C6CA-FF0890781EB3" referredColumn="54BBCCF6-D2F8-E656-1E15-B5E2E9AB7FDA"/>
+</associations>
+</Column>
+<Column name="DETAIL" id="E0A8BAB3-4792-3D00-FE44-0D5A3FFB1A33">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>PRESCRIPTION</sourceObjSchema>
+<sourceObjName>DETAIL</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>DC634E16-946F-68B4-CE87-290E9B5E0917</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="728D2063-FC30-36D4-816B-DB38BE2E65ED" name="PRESCRIPTION_PK">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>HOSPITAL</sourceObjSchema>
+<sourceObjName>PRESCRIPTION_PK</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>AFCC25E3-AA42-E65B-01A1-F26AB67277F9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4B7AD93-8DB6-BC1D-8A70-7AB03C04112E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F1B21DFF-C58B-DA2D-8C0A-8827AA50AF30" schemaObject="A225C9C2-D467-B45F-444F-85C3DC1D99C5" name="PRESCRIPTION_PK">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>HOSPITAL</sourceObjSchema>
+<sourceObjName>PRESCRIPTION_PK</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>F75B5978-6FAE-6BA8-476E-9F80FA832CB7</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4B7AD93-8DB6-BC1D-8A70-7AB03C04112E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5853E6D3-D4FF-739B-0B9B-8749FC384CFC" name="PRESCRIPTION_PATIENT_PATIID_FK">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37861817-2602-C271-6343-8D480ED5C807"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F0ECEE87-FF51-7A5B-B0BC-D14BBB1DA6E0" name="PRESCRIPTION_RESERVATION_FK">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B640FC49-8BB7-3F6F-6B7A-DC0E6D7AE31E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

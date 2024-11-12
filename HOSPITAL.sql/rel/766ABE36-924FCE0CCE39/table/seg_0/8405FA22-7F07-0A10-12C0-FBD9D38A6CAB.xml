@@ -29,6 +29,9 @@
 <dataTypeSize>6 CHAR</dataTypeSize>
 <ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9224CDCD-F557-D73D-91FD-DE443BBF951C" referredColumn="9901F2EF-8D7B-2259-B93A-D55D5FA951F2"/>
+</associations>
 </Column>
 <Column name="DOCID" id="87C701A4-965F-3751-4737-0646730A800A">
 <createdBy>user1</createdBy>
@@ -40,6 +43,9 @@
 <dataTypeSize>6 CHAR</dataTypeSize>
 <ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27717665-D1C1-E368-5BBC-861F734B60A2" referredColumn="CBEE71CF-4FC6-E417-914B-ADBA768D5603"/>
+</associations>
 </Column>
 <Column name="RESERVDATE" id="6687B37A-E894-B47E-B99C-15B08F29A855">
 <createdBy>user1</createdBy>
@@ -73,6 +79,26 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="88DA918C-A8B8-19DA-C275-B0CCF10DAF39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E0025A4B-E05E-B6D4-CE6B-9982CD06EF6A" name="RESERVATION_DOCTOR_DOCID_FK">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 08:13:57 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87C701A4-965F-3751-4737-0646730A800A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0520331-8DDB-241F-C373-F9871C394501" name="RESERVATION_PATIENT_PATIID_FK">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 08:14:27 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C91F758-12D6-FF01-3D6B-15CF378AC6C1"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

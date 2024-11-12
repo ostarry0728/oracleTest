@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="PRESCRIPTION" directorySegmentName="seg_0" id="7A2C6239-45BD-790C-D9F7-BF5BD1BB37CA">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PATIID" id="7BA81FBA-0E80-D3E4-DF52-55D2103153C4">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RESERVID" id="CCCB57A3-12B2-D881-90FB-EE25310B96D6">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PREID" id="D54CBC84-8F95-C01F-BBB2-06BE846131DF">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DETAIL" id="E967721F-8CFF-B6E2-C618-C7850D1304CD">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PRESCRIPTION_RESERVATION_FK" id="18BD7939-F11C-47FF-8E70-715EB39346EF">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PRESCRIPTION_PATIENT_PATIID_FK" id="BC40CA9F-AC71-2255-98A5-1B86977078AE">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRESCRIPTION_PK" id="7E72FD8A-9F13-78EF-196B-2EC547E82763">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A9B0846E-5352-8737-6B90-D680098DBFBC" containerWithKeyObject="57D39A9B-2763-E886-1F7D-E97E79C57B7B" localFKIndex="7E7EAE17-0452-22CF-6518-8CA3137192C2" name="RESERVATION_PATIENT_PATIID_FK">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>HOSPITAL</sourceObjSchema>
+<sourceObjName>RESERVATION_PATIENT_PATIID_FK</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>EE0E162F-A6F8-5C34-27C0-F9D11CBFB305</importedID>
+<referredTableLongName>HOSPITAL.PATIENT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A69C75EC-AFF8-37AC-6473-B815AF5877BA</referredTableID>
+<keyObject>42F2E375-2B1F-C42F-9CB6-529FA1B60721</keyObject>
+<referredKeyID>42F2E375-2B1F-C42F-9CB6-529FA1B60721</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PATIID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

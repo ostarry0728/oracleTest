@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A2C6239-45BD-790C-D9F7-BF5BD1BB37CA" name="PRESCRIPTION">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 08:05:39 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PREID" id="D54CBC84-8F95-C01F-BBB2-06BE846131DF">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 08:06:29 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESERVID" id="CCCB57A3-12B2-D881-90FB-EE25310B96D6">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 08:06:43 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="89C61408-F906-C275-E2C1-E28039F0F19A" referredColumn="88DA918C-A8B8-19DA-C275-B0CCF10DAF39"/>
+</associations>
+</Column>
+<Column name="PATIID" id="7BA81FBA-0E80-D3E4-DF52-55D2103153C4">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 08:06:53 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D8D68C31-FD18-2971-BCF7-081291D4D16F" referredColumn="9901F2EF-8D7B-2259-B93A-D55D5FA951F2"/>
+</associations>
+</Column>
+<Column name="DETAIL" id="E967721F-8CFF-B6E2-C618-C7850D1304CD">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 08:07:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7E72FD8A-9F13-78EF-196B-2EC547E82763" name="PRESCRIPTION_PK">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 08:06:29 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D54CBC84-8F95-C01F-BBB2-06BE846131DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BC40CA9F-AC71-2255-98A5-1B86977078AE" name="PRESCRIPTION_PATIENT_PATIID_FK">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 08:16:23 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BA81FBA-0E80-D3E4-DF52-55D2103153C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="18BD7939-F11C-47FF-8E70-715EB39346EF" name="PRESCRIPTION_RESERVATION_FK">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 08:18:04 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CCCB57A3-12B2-D881-90FB-EE25310B96D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
