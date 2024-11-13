@@ -125,7 +125,33 @@ SELECT ROWNUM, EMPLOYEE_ID, FIRST_NAME, HIRE_DATE FROM
 (SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE FROM EMPLOYEES ORDER BY HIRE_DATE DESC)
 WHERE ROWNUM <= 4;
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- 문제1 사원 번호와 사원명과 부서명과 부서의 위치를 출력하는 뷰를 작성하라
+CREATE VIEW VIEW_LOC
+AS
+SELECT EMPLOYEE_ID, FIRST_NAME, DEPARTMENT_NAME, LOCATION_ID FROM EMPLOYEES, DEPARTMENTS;
 
+SELECT * FROM VIEW_LOC;
 
+-- 문제2 30번 부서 소속 사원의 이름과 입사일과 부서명을 출력하는 뷰를 작성하라
+CREATE VIEW VIEW_DEPT30
+AS
+SELECT FIRST_NAME, HIRE_DATE, DEPARTMENT_NAME, DEPARTMENT_ID FROM EMPLOYEES,DEPARTMENTS WHERE DEPARTMENTS.DEPARTMENT_ID = 30;
 
+SELECT * FROM VIEW_DEPT30;
 
+-- 문제3 부서별 최대 급여 정보를 가지는 뷰를 생성하라
+CREATE VIEW VIEW_DEPT_MAXSAL
+AS
+SELECT DEPARTMENT_ID, MAX(SALARY) AS MAX_SALARY FROM EMPLOYEES GROUP BY DEPARTMENT_ID;
+
+SELECT * FROM VIEW_DEPT_MAXSAL;
+
+-- 문제4 급여를 많이 받는 순서대로 3명만 출력하는 뷰와 인라인 뷰로 작성하라
+CREATE VIEW VIEW_SAL_TOP3
+AS
+SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME, SALARY
+FROM (SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME, SALARY FROM EMPLOYEES ORDER BY SALARY DESC)WHERE ROWNUM <= 3;
+
+SELECT * FROM VIEW_SAL_TOP3;
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
