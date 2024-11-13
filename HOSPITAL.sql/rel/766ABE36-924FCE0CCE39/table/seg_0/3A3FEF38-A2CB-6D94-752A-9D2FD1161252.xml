@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3A3FEF38-A2CB-6D94-752A-9D2FD1161252" schemaObject="A225C9C2-D467-B45F-444F-85C3DC1D99C5" name="DOCTOR">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>HOSPITAL</sourceObjSchema>
+<sourceObjName>DOCTOR</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>DC08EC5E-4459-2E19-4FE6-7097308A34C8</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DOCID" id="2BCA8878-1E78-3074-05BE-C340F2F8FE97">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>DOCTOR</sourceObjSchema>
+<sourceObjName>DOCID</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>85F09C0B-C805-A9A4-CDAF-B2604D67C7F1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOCNAME" id="1F28601D-67C2-5703-DA33-B1C4A767A80E">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>DOCTOR</sourceObjSchema>
+<sourceObjName>DOCNAME</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>A8A3D58F-0860-F689-5505-4E273095A5C7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLASSID" id="D11E4784-4596-3AB1-3D36-9DC8FFAB36FA">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>DOCTOR</sourceObjSchema>
+<sourceObjName>CLASSID</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>FC2FD14E-F2E7-312A-2F2F-33F7EC7C10EF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B550DB5-0A13-FC49-A1E9-58E76CFFACB8" referredColumn="C432F312-BF3B-7945-6629-B6988600B95E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2A8F4322-E573-D9E7-0A53-98B26F183AC3" name="DOCTOR_PK">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>HOSPITAL</sourceObjSchema>
+<sourceObjName>DOCTOR_PK</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>4E7AC7D9-0AF1-4590-4245-60FA55665755</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BCA8878-1E78-3074-05BE-C340F2F8FE97"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42091061-5442-8A20-413F-5BC1A6AFE0D6" schemaObject="A225C9C2-D467-B45F-444F-85C3DC1D99C5" name="DOCTOR_PK">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>HOSPITAL</sourceObjSchema>
+<sourceObjName>DOCTOR_PK</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>288C79FE-97F6-EFF4-97FA-B21FA0A3C8C4</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BCA8878-1E78-3074-05BE-C340F2F8FE97"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46C3EB0A-BF06-0E9B-1FE3-1BFAFBCD2237" name="DOCTOR_HOSPITAL_CLASSID_FK">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D11E4784-4596-3AB1-3D36-9DC8FFAB36FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

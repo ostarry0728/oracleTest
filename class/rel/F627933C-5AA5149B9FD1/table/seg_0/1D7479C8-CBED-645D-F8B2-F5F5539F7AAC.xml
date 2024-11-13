@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1D7479C8-CBED-645D-F8B2-F5F5539F7AAC" schemaObject="6C544CE9-6F64-26C9-8F3A-D8BF457F8B5B" name="TRAINEE">
+<sourceConnName>STUDENTDB</sourceConnName>
+<sourceObjSchema>STUDENTDB</sourceObjSchema>
+<sourceObjName>TRAINEE</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 03:39:47 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>C5D1FBAC-4CE1-B902-E200-0A0D85BFF9A0</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NO" id="6226476A-CED4-7FD4-DAED-EFF36BA2EBFE">
+<sourceConnName>STUDENTDB</sourceConnName>
+<sourceObjSchema>TRAINEE</sourceObjSchema>
+<sourceObjName>NO</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 03:39:47 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>306DDEA4-B669-8BF2-8D38-2B795929AA46</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODE" id="CF61A24C-2EFA-85E2-A7C1-2730D7CB61B3">
+<sourceConnName>STUDENTDB</sourceConnName>
+<sourceObjSchema>TRAINEE</sourceObjSchema>
+<sourceObjName>CODE</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 03:39:47 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>F7A66160-55CC-3D17-154F-F9B5C5CE75CA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="62BAF5C3-82F8-4430-A211-A48DA1FF2FDC" referredColumn="6126EF08-5FCF-E964-610E-9C30AE5F6EE4"/>
+</associations>
+</Column>
+<Column name="NUM" id="79587F8A-DD59-F68A-73F3-1AC28BCAC1A2">
+<sourceConnName>STUDENTDB</sourceConnName>
+<sourceObjSchema>TRAINEE</sourceObjSchema>
+<sourceObjName>NUM</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 03:39:47 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>5A863C98-A17B-6194-2EF5-46958BE090A7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F77E05BE-6E1C-5674-895C-C1B31A9429F0" referredColumn="708F7E09-2E4E-6E20-DB33-254EE745F1DD"/>
+</associations>
+</Column>
+<Column name="SECTION" id="AD932A3E-0AD8-5379-F476-D6ABF5763123">
+<sourceConnName>STUDENTDB</sourceConnName>
+<sourceObjSchema>TRAINEE</sourceObjSchema>
+<sourceObjName>SECTION</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 03:39:47 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>CB394B69-593F-F2CE-268A-83563CD6415D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGISTER" id="4E95CD4D-B81B-6CCF-205A-75027D4A3024">
+<sourceConnName>STUDENTDB</sourceConnName>
+<sourceObjSchema>TRAINEE</sourceObjSchema>
+<sourceObjName>REGISTER</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 03:39:47 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>87D14E0E-5875-0D38-C39C-330AE58B3DF2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="28006323-6875-6EA0-92AB-1611DCB41B19" name="TRAINEE_NO_PK">
+<sourceConnName>STUDENTDB</sourceConnName>
+<sourceObjSchema>STUDENTDB</sourceObjSchema>
+<sourceObjName>TRAINEE_NO_PK</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 03:39:47 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>AC6FF22E-1851-FDDF-D24A-8E12461E6378</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6226476A-CED4-7FD4-DAED-EFF36BA2EBFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B40F472E-75C3-84E2-93CA-F655BD473E0B" schemaObject="6C544CE9-6F64-26C9-8F3A-D8BF457F8B5B" name="TRAINEE_NO_PK">
+<sourceConnName>STUDENTDB</sourceConnName>
+<sourceObjSchema>STUDENTDB</sourceObjSchema>
+<sourceObjName>TRAINEE_NO_PK</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 03:39:47 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>759140F9-F91D-17A8-ED84-E0B2FBFB20E6</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6226476A-CED4-7FD4-DAED-EFF36BA2EBFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D9969032-8551-6304-CE74-4194424F1605" name="TRAINEE_STUDENT_CODE_FK">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 03:39:47 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF61A24C-2EFA-85E2-A7C1-2730D7CB61B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6D9967AD-D2AD-E66E-381E-96EA2DD095AD" name="TRAINEE_SUBJECT_NUM_FK">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 03:39:47 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79587F8A-DD59-F68A-73F3-1AC28BCAC1A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

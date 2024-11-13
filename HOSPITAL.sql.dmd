@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="HOSPITAL.sql" id="98C4B874-AD2C-D157-1050-E74E2263B970" version="3.5">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 07:49:07 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>98C4B874-AD2C-D157-1050-E74E2263B970</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="3586F220-D7DF-80C4-02A0-9B2E362354E8">
+<designStoragePath>D:\oracleTest</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

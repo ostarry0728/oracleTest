@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="57D39A9B-2763-E886-1F7D-E97E79C57B7B" schemaObject="A225C9C2-D467-B45F-444F-85C3DC1D99C5" name="RESERVATION">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>HOSPITAL</sourceObjSchema>
+<sourceObjName>RESERVATION</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>8FB27D29-D827-5BD5-3455-6CA628F0C6AB</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RESERVID" id="4B9451B4-D8F7-7F48-A49E-5EABB270E1EA">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>RESERVID</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>EE0741D3-092B-28D5-F5EC-B26DFD973807</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PATIID" id="2F4EE648-474A-EF18-2352-2B7878F76F9B">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>PATIID</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>8187316F-AF46-AEB7-6074-A713E9413515</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A9B0846E-5352-8737-6B90-D680098DBFBC" referredColumn="54BBCCF6-D2F8-E656-1E15-B5E2E9AB7FDA"/>
+</associations>
+</Column>
+<Column name="DOCID" id="00EC31F9-0F7E-9E77-70D8-822E746872CC">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>DOCID</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>BE36D283-7C4F-4C2F-6C82-BE1DA9124B35</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D997B0D5-3F6D-BDCF-73E1-C27B9D256157" referredColumn="2BCA8878-1E78-3074-05BE-C340F2F8FE97"/>
+</associations>
+</Column>
+<Column name="RESERVDATE" id="ACF35713-221E-8D12-A9B2-81E23D031595">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>RESERVDATE</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>EC34C727-A52F-3828-10A0-DC4928A208BC</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="06A6173A-F4C4-EC1D-80DB-E95F4E46B890">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>STATUS</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>C6A604FC-AF5B-08ED-0A0C-C0644ACA966E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="73AAC105-C210-79B9-0D44-8AE1A0460499" name="RESERVATION_PK">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>HOSPITAL</sourceObjSchema>
+<sourceObjName>RESERVATION_PK</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>067A0C71-B7E5-C34F-AC21-96A8B44AB778</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B9451B4-D8F7-7F48-A49E-5EABB270E1EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="551DF32A-D9BC-FBA6-700C-DB63C4D7CB89" schemaObject="A225C9C2-D467-B45F-444F-85C3DC1D99C5" name="RESERVATION_PK">
+<sourceConnName>HOSPITAL</sourceConnName>
+<sourceObjSchema>HOSPITAL</sourceObjSchema>
+<sourceObjName>RESERVATION_PK</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<importedID>2F6FA0AF-1B99-0C5B-8BDC-BBCB5C8F9081</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B9451B4-D8F7-7F48-A49E-5EABB270E1EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DAC48E6D-A9DC-B464-7D9E-2A79944767F0" name="RESERVATION_DOCTOR_DOCID_FK">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00EC31F9-0F7E-9E77-70D8-822E746872CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E7EAE17-0452-22CF-6518-8CA3137192C2" name="RESERVATION_PATIENT_PATIID_FK">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:17 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F4EE648-474A-EF18-2352-2B7878F76F9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

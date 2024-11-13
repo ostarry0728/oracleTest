@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="DOCTOR" directorySegmentName="seg_0" id="0EA583BC-A82E-C22D-AFE8-26F3A59ABE9B">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DOCNAME" id="38FF7504-75C8-86B6-047B-C61F18ABFEDC">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DOCID" id="CBEE71CF-4FC6-E417-914B-ADBA768D5603">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CLASSID" id="FB188224-10B8-ADB8-7F2E-9786C1F45CCD">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DOCTOR_HOSPITAL_CLASSID_FK" id="2B4DF0CA-6A89-1E8C-CF37-C8BB114A62AC">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DOCTOR_PK" id="E4463EBC-AD5F-1146-6BD5-E37C923F2D6F">
+<createdBy>user1</createdBy>
+<createdTime>2024-11-08 09:03:13 UTC</createdTime>
+<ownerDesignName>HOSPITAL.sql</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>
