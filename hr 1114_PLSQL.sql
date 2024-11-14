@@ -1,27 +1,38 @@
 -- PL/SQL
--- 구구단 작성
+-- 문제1 EMPLOYEES 테이블에 등록된 총사원의 수와 급여의 합, 급여의 평균을 변수에 대입하여 출력하여보자
 DECLARE
-    VNUM NUMBER := 3;
-    VCOUNT NUMBER := 1;
-    VDAN NUMBER := 0;
+    VEMPLOYEE NUMBER(4);
+    VSALARY_SUM NUMBER(7);
+    VSALARY_AVG NUMBER(10,2);
 BEGIN
-    LOOP
-        VDAN := VDAN + 1;
-        VCOUNT := 1;
-        DBMS_OUTPUT.PUT_LINE('------------------' || 'VDAN' ||'------------------');
-        
-        -- VDAN단을 출력
-        LOOP
-            DBMS_OUTPUT.PUT_LINE(VDAN ||' * '|| VCOUNT ||' = '||VDAN*VCOUNT);
-            VCOUNT := VCOUNT + 1;
-            IF VCOUNT > 9 THEN
-                EXIT;
-            END IF;
-        END LOOP;
-        -- 단 출력 
-        IF VDAN > 9 THEN
-            EXIT;
-        END IF;
-    END LOOP;
+    SELECT COUNT(*), SUM(SALARY), AVG(SALARY) INTO VEMPLOYEE, VSALARY_SUM, VSALARY_AVG FROM EMPLOYEES;
+    
+    DBMS_OUTPUT.PUT_LINE('총사원의 수 : ' || VEMPLOYEE);
+    DBMS_OUTPUT.PUT_LINE('급여의 합 : ' || VSALARY_SUM);
+    DBMS_OUTPUT.PUT_LINE('급여의 평균 : ' || VSALARY_AVG);
+END;
+/
+
+
+-- 문제2 Clara 사원의 직무, 급여, 입사일자, 커미션, 부서명을 변수에 대입하여 출력하여 보자
+
+DECLARE
+    JOB_ID VARCHAR2(10);
+    SALARY NUMBER(6);
+    HIRE_DATE DATE;
+    COMMISSION_PCT NUMBER(5,2);
+    DEPARTMENT_NAME VARCHAR2(50);
+BEGIN
+    SELECT E.JOB_ID, E.SALARY, E.HIRE_DATE, E.COMMISSION_PCT, D.DEPARTMENT_NAME
+    INTO JOB_ID, SALARY, HIRE_DATE, COMMISSION_PCT, DEPARTMENT_NAME
+    FROM EMPLOYEES E 
+    JOIN DEPARTMENTS D ON E.DEPARTMENT_ID = D.DEPARTMENT_ID 
+    WHERE E.FIRST_NAME = 'Clara';
+    
+    DBMS_OUTPUT.PUT_LINE('직무 : ' || JOB_ID);
+    DBMS_OUTPUT.PUT_LINE('급여 : ' || SALARY);
+    DBMS_OUTPUT.PUT_LINE('입사일자 : ' || TO_CHAR(HIRE_DATE, 'YY-MM-DD'));
+    DBMS_OUTPUT.PUT_LINE('커미션 : ' || NVL(COMMISSION_PCT, 0));
+    DBMS_OUTPUT.PUT_LINE('부서명 : ' || DEPARTMENT_NAME);
 END;
 /
