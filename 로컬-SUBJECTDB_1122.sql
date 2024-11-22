@@ -11,6 +11,8 @@ create sequence subject_seq
 start with 1
 increment by 1;
 
+insert into subject(no, num, name) values (subject_seq.nextval, ?, ?);
+
 -- 학생
 create table student( 
     no number,                      -- pk, seq
