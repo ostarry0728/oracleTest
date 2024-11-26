@@ -57,11 +57,12 @@ drop table lesson;
 create table lesson( 
     no number ,                 --pk seq
     abbre varchar2(2) not null, --과목요약
-    name varchar2(20) not null  --과목이름
+    name varchar2(24) not null  --과목이름
 );
 Alter table lesson add constraint lesson_no_pk primary key(no); 
 Alter table lesson add constraint lesson_abbre_uk UNIQUE(abbre);
 
+drop sequence lesson_seq;
 create sequence lesson_seq 
 start with 1
 increment by 1;
@@ -78,7 +79,7 @@ create table trainee(
     no number ,                     --pk seq
     s_num varchar2(8) not null,     --student(fk) 학생번호
     abbre varchar2(2) not null,     --lesson(fk) 과목요약
-    section varchar2(20) not null,  --전공,부전공,교양
+    section varchar2(24) not null,  --전공,부전공,교양
     registdate date default sysdate      --수강신청일
 );
 Alter table trainee add constraint trainee_no_pk primary key(no);
