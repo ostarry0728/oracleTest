@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1EFFA9A8-809C-A4A9-103D-B0D153368108" containerWithKeyObject="D05FA17A-19B6-E9E0-7A08-242CA350426A" localFKIndex="478D1CB6-4C80-5DF5-CE08-8247BAE96B47" name="TRAINEE_LESSON_ABBRE_FK">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECTDB</sourceObjSchema>
+<sourceObjName>TRAINEE_LESSON_ABBRE_FK</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-11-22 03:50:32 UTC</createdTime>
+<ownerDesignName>asdf</ownerDesignName>
+<referredTableLongName>SUBJECTDB.LESSON</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F7DDAC74-E89F-5099-5A1A-293FBE0BCB80</referredTableID>
+<keyObject>ECA3FB8D-4BD2-3840-0DCB-249CB4C4646C</keyObject>
+<referredKeyID>ECA3FB8D-4BD2-3840-0DCB-249CB4C4646C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ABBRE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
