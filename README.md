@@ -38,3 +38,6 @@ public static void main(String[] args) {
 ```
 # 6. 하이퍼링크(HyperLink)
 kh홈페이지<https://kh-academy.co.kr/main/main.kh>
+
+# 이미지 불러오기(HyperLink)
+![프로젝트 이미지](orcleTest/image/miniproject_pic01.PNG)
