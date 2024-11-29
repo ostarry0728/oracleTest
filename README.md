@@ -20,4 +20,21 @@
    2. 하위메뉴
    3. 하위메뉴
 # 3. 인덱싱(순서가 없는 목록)   
-   
+* 아이템1
+* 아이템2
+* 아이템3
+   * 하위아이템1
+   * 하위아이템2
+   * 하위아이템3
+     
+# 4. 구분선
+___
+***
+# 5. 코드블록
+```
+public static void main(String[] args) {
+   System.out.println("코드처럼보이게하기");
+}
+```
+# 6. 하이퍼링크(HyperLink)
+kh홈페이지<https://kh-academy.co.kr/main/main.kh>
