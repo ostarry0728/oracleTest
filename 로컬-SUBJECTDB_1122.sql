@@ -105,3 +105,17 @@ increment by 1;
 UPDATE TRAINEE SET S_NUM = '', ABBRE = '', SECTION = '' WHERE NO = 10; 
 INSERT INTO TRAINEE VALUES(trainee_seq.NEXTVAL,'','','',SYSDATE); 
 
+-- 공공데이터 (전통시장 정보)
+create table LANDPRICE( 
+    NODENO NUMBER,                  -- PK
+	GPSLATI NUMBER,
+    GPSLONG NUMBER,
+	NODEID VARCHAR2(20) NOT NULL,
+    NODENM VARCHAR2(50)    
+);
+Alter table LANDPRICE add constraint LANDPRICE_NODENO_PK primary key(NODENO); 
+Alter table LANDPRICE add constraint LANDPRICE_NODEID_UK UNIQUE(NODEID);
+
+SELECT COUNT(*) AS COUNT FROM LANDPRICE WHERE NODENO = 10;
+
+SELECT * FROM hospital2;
